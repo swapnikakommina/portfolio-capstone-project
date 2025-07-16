@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Cloud Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cloud Portfolio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Contact Form - Serverless Demo</h1>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                This contact form demonstrates serverless architecture using AWS Lambda and DynamoDB
+            </p>
+            
+            <div id="statusMessage" class="status-message"></div>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send Message via Lambda</button>
+            </form>
+            
+            <div style="background: #e8f4f8; padding: 2rem; margin-top: 2rem; border-radius: 12px;">
+                <h3>Technical Implementation:</h3>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li>Frontend: S3 Static Website Hosting</li>
+                    <li>API: Amazon API Gateway</li>
+                    <li>Backend: AWS Lambda (Python)</li>
+                    <li>Database: Amazon DynamoDB</li>
+                    <li>Monitoring: CloudWatch Logs & Metrics</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Cloud Computing Capstone Project</p>
+        <p>Serverless Contact Form Demo</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
