@@ -1,0 +1,33 @@
+name: Deploy Portfolio Application
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
+    - name: Deploy Frontend to S3
+      run: |
+        aws s3 sync ./frontend/ s3://portfolio-capstone-1752634385 --delete
+        echo "Frontend deployed successfully"
+    
+    - name: Update Lambda Function
+      run: |
+        cd backend/lambda-functions
+        zip -r contact-handler.zip contact-handler.py
+        aws lambda update-function-code \
+          --function-name ContactFormHandler \
+          --zip-file fileb://contact-handler.zip
+        echo "Lambda function updated successfully"
