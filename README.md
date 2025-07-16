@@ -52,7 +52,7 @@ This project demonstrates a complete serverless web application built on Amazon 
 
 ### Resource Identifiers
 - **S3 Bucket**: portfolio-capstone-1721090437
-- **Website URL**: http://portfolio-capstone-1721090437.s3-website-us-east-1.amazonaws.com
+- **Website URL**: http://portfolio-capstone-1752634385.s3-website-us-east-1.amazonaws.com
 - **DynamoDB Table**: ContactMessages
 - **Lambda Function**: ContactFormHandler
 - **IAM Role**: lambda-execution-role
@@ -263,4 +263,4 @@ The project serves as both a functional portfolio website and a technical demons
 **Project Completion Date**: July 16, 2025  
 **AWS Account**: 064190739648  
 **Repository**: https://github.com/swapnikakommina/portfolio-capstone-project  
-**Live Demo**: http://portfolio-capstone-1721090437.s3-website-us-east-1.amazonaws.com
+**Live Demo**: http://portfolio-capstone-1752634385.s3-website-us-east-1.amazonaws.com
