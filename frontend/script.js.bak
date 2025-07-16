@@ -1,5 +1,5 @@
 // API Gateway endpoint - will be updated after deployment
-const API_ENDPOINT = 'https://gcdn2ky286.execute-api.us-east-1.amazonaws.com/prod/contact';
+const API_ENDPOINT = 'https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/prod/contact';
 
 document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
