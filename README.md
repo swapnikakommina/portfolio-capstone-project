@@ -53,6 +53,16 @@ Comprehensive monitoring is established using Amazon CloudWatch with custom dash
 **Alarms**: Lambda errors, duration, API Gateway errors  
 **Logs**: Function execution logs with detailed error tracking
 
+## Resource Identifiers
+
+- **S3 Bucket**: portfolio-capstone-1752634385
+- **Website URL**: http://portfolio-capstone-1752634385.s3-website-us-east-1.amazonaws.com
+- **API Gateway ID**: gcdn2ky286
+- **API Endpoint**: https://gcdn2ky286.execute-api.us-east-1.amazonaws.com/prod/contact
+- **DynamoDB Table**: ContactMessages
+- **Lambda Function**: ContactFormHandler
+- **IAM Role**: lambda-execution-role
+
 ## Request Flow Architecture
 
 The application follows a modern serverless architecture pattern:
@@ -176,6 +186,7 @@ The current implementation provides a solid foundation for additional features i
 **Deployment Date**: July 16, 2025  
 **Project Duration**: 2 days (Day 23-24 of training program)  
 **Total Resources**: 6 AWS services integrated  
-**Code Repository**: GitHub with full version control history
+**Repository**: https://github.com/swapnikakommina/portfolio-capstone-project  
+**Live Demo**: http://portfolio-capstone-1752634385.s3-website-us-east-1.amazonaws.com
 
 This project represents a comprehensive implementation of modern cloud computing practices and demonstrates readiness for production cloud engineering roles.
